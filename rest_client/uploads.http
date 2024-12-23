@@ -1,0 +1,7 @@
+### 
+
+GET http://localhost:8000/api/uploads/1734485417120-673465-horse.jpg
+
+
+###
+POST http://localhost:8000/api/uploads

@@ -1,0 +1,33 @@
+### Get All reviews
+
+GET  http://localhost:8000/api/reviews?pageNumber=2&reviewperPage=2
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDM2OTM4MSwiZXhwIjoxNzM0NDU1NzgxfQ.C3HowJrwEs-otSM6Gf2beX1VRI3EBqUO5bXppDEnzjs
+
+### post a review
+
+POST http://localhost:8000/api/reviews/8
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDM2OTM4MSwiZXhwIjoxNzM0NDU1NzgxfQ.C3HowJrwEs-otSM6Gf2beX1VRI3EBqUO5bXppDEnzjs
+Content-Type: application/json
+
+{
+ "rating":5,
+ "comment":"this is a great pen"
+}
+
+
+### update review 
+
+PUT  http://localhost:8000/api/reviews/4
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDM2OTM4MSwiZXhwIjoxNzM0NDU1NzgxfQ.C3HowJrwEs-otSM6Gf2beX1VRI3EBqUO5bXppDEnzjs
+Content-Type: application/json
+
+{
+ "rating":4,
+ "comment":"this is a good pen"
+}
+
+
+### update review 
+
+DELETE   http://localhost:8000/api/reviews/4
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDM2OTM4MSwiZXhwIjoxNzM0NDU1NzgxfQ.C3HowJrwEs-otSM6Gf2beX1VRI3EBqUO5bXppDEnzjs

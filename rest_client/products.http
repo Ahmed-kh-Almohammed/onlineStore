@@ -1,0 +1,33 @@
+
+### Get all products
+GET http://localhost:8000/api/products?title=book&minPrice=8&maxPrice=9
+
+
+
+### Get single product
+GET http://localhost:8000/api/products/7
+
+
+### Creat new product
+POST http://localhost:8000/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDI4MjgzNSwiZXhwIjoxNzM0MzY5MjM1fQ.75-1tZOcWV8hkQhpieWMPihQeW5vB_t3Nff1eLG5Kts
+
+{
+    "title":"cup",
+    "description":"abouth this cup ",
+    "price":6
+}
+
+### Update product
+PUT http://localhost:8000/api/products/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDI4MjgzNSwiZXhwIjoxNzM0MzY5MjM1fQ.75-1tZOcWV8hkQhpieWMPihQeW5vB_t3Nff1eLG5Kts
+Content-Type: application/json
+
+{
+    "title":"laptop updated"
+    
+}
+### delete product 
+DELETE http://localhost:8000/api/products/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJBZG1pbiIsImlhdCI6MTczNDI4MjgzNSwiZXhwIjoxNzM0MzY5MjM1fQ.75-1tZOcWV8hkQhpieWMPihQeW5vB_t3Nff1eLG5Kts
